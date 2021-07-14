@@ -56,7 +56,7 @@ export default function SimpleModal(props) {
 
   return (
     <div>
-      {inventory == true? <Button variant="contained" color="primary" onClick={handleOpen}>
+      {inventory == true? <Button variant="contained" color="primary" st onClick={handleOpen}>
         <AddIcon></AddIcon>
          Add To Inventory
     </Button>:<Button variant="contained" color="primary" onClick={handleOpen}>

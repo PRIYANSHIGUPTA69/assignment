@@ -41,12 +41,15 @@ export default function Books() {
  const [inventory , setInventory] = useState(false)
   const classes = useStyles();
   const handleChange = () => {
-   setInventory(!inventory)
-    console.log(inventory)
+    if(inventory == false){
+      setInventory(!inventory)
+    }
   }
   const handleChangeItem = () => {
-    setInventory(!inventory)
-     console.log(inventory)
+    if(inventory == true){
+      setInventory(!inventory)
+    }
+   
    }
   return (
     <>
@@ -68,7 +71,7 @@ export default function Books() {
             Inventory
           </Typography>
          </IconButton>
-         <IconButton edge="start"  className={classes.menuButton} onClick={handleChange} aria-label="menu">
+         <IconButton edge="start"  className={classes.menuButton} onClick={handleChangeItem} aria-label="menu">
 
          <StorefrontIcon/>
          <Typography variant="body1" gutterBottom>
